@@ -1,0 +1,97 @@
+---------------------------------------------------TESTCASES------------------------------------------------
+
+1) Test for NULL string 
+ INPUT: ./pointersorter ""
+ OUTPUT:
+
+------------------------------------------------------------------------------------
+2) TESTING FOR NO ALPHABETS
+   INPUT: ./pointersorter "@#$@$#%%$^12345"
+   OUTPUT: 
+
+------------------------------------------------------------------------------------
+3) TESTING FOR LESS THAN TWO ARGUEMENTS
+	INPUT:- ./pointersorter "hello" "token"
+	OUTPUT:- Need to have two arguements to tokenize
+
+-------------------------------------------------------------------------------------
+4) TESTING FOR MORE THAN TWO ARGUEMENTS 
+	INPUT:- ./pointersorter "hello" "token" "zer"
+	OUTPUT:-Need to have two arguements to tokenize
+
+-------------------------------------------------------------------------------------
+5) TESTING FOR CAPITALIZATION
+	INPUT:- ./pointersorter bhanu34BHANU678BHANuBhAnu
+	OUTPUT:- 
+			BHANU
+			BHANuBhAnu
+			bhanu
+
+-------------------------------------------------------------------------------------
+6) TESTING FOR TOKENIZING
+	INPUT:- ./pointersorter "stuff3otherstuff4things3blarp"
+	OUTPUT:-
+			things
+			stuff
+			otherstuff
+			blarp
+
+------------------------------------------------------------------------------------
+7) TESTING FOR DUPLICATES
+	INPUT:- ./pointersorter "this this is is my Name name"
+	OUTPUT:-
+			Name
+			this 
+			this
+			name
+			my
+			is
+			is
+
+---------------------------------------------------------------------------------------
+8)   TESTING 
+	INPUT:- ./pointersorter ZOUNDS1APPLE2aaple4zounds
+	OUTPUT:-
+			ZOUNDS
+			APPLE
+			zounds
+			aapple
+---------------------------------------------------------------------------------------
+9) TESTING FOR HARD CASES
+	INPUT:- ./pointersorter "   I aaaammmm 34545$$%&^&FROM5NEw7JERSEY    NEWPROVI     "
+	OUTPUT:-	
+			NEWPROVI
+			NEw
+			JERSEY
+			I
+			FROM
+			aaaammmm
+------------------------------------------------------------------------------------------
+10) TESTING
+	INPUT:-./pointersorter "^hello....I$^6 have  ??/// [NO]..F>R<I>EN<DS....@##$$%^&%^()POOR_ME:("
+	OUTPUT:-
+			R
+			POOR
+			NO
+			ME
+			I
+			I
+			F
+			EN
+			DS
+			hello
+			have
+
+------------------------------------------------------------------------------------------------
+11) TESTING FOR SPECIAL CASES
+	INPUT:- ./pointersorter "HELLO MY NAME \tis \nBHANU bHAnu bhaNU bhanU"
+	OUTPUT:-
+		NAME
+		MY
+		HELLO
+		tis
+		nBHANU
+		bHAnu
+		bhaNU
+		bhanU
+--------------------------------------------THE END------------------------------------------
